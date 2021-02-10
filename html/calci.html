@@ -1,45 +1,35 @@
-<!DOCTYPE html>
 <html>
     <head>
-        <title>my calculator</title>
+        <title>calculator</title>    
         <link rel="stylesheet" href="C:\Users\KISHOREGANESH S\Desktop\important shit\js journey\calculater\css\style.css">
+        <script src="C:\Users\KISHOREGANESH S\Desktop\important shit\js journey\calculater\js\operations.js"></script>
     </head>
     <body>
         <section>
             <div class="container">
-                <div class="display">
-                    <div class="display1">+3513513</div>
-                    <div class="display2">64415</div>
-                    <div class="temp-result">1232</div>
-                </div>
-
-                <div class="all_buttons">
-                    <div class="button all_clear">C</div>
-                    <div class="button last_entry_clear">CE</div>
-                    <div class="button operation">%</div>
-                    <div class="button operation">/</div>
-                    <div class="button number">7</div>
-                    <div class="button number">8</div>
-                    <div class="button number">9</div>
-                    <div class="button operation">X</div>
-                    <div class="button number">4</div>
-                    <div class="button number">5</div>
-                    <div class="button number">6</div>
-                    <div class="button operation">-</div>
-                    <div class="button number">1</div>
-                    <div class="button number">2</div>
-                    <div class="button number">3</div>
-                    <div class="button operation">+</div>
-                    <div class="button number btn_zero">0</div>
-                    <div class="button number dot">.</div>
-                    <div class="button equal">=</div>
-
-
+                <div class="display">0</div>
+                <div class="btns">
+                    <div class="single"><button type="button" onclick="btn_c()"         class="square_buttons">C</button></div>
+                    <div class="single"><button type="button" onclick="btn_sqrt()"      class="square_buttons">√</button></div>
+                    <div class="single"><button type="button" onclick="btn_modulo()"    class="square_buttons">%</button></div>
+                    <div class="single"><button type="button" onclick="btn_divide()"    class="square_buttons">/</button></div>
+                    <div class="single"><button type="button" onclick="btn_seven()"     class="square_buttons">7</button></div>
+                    <div class="single"><button type="button" onclick="btn_eight()"     class="square_buttons">8</button></div>
+                    <div class="single"><button type="button" onclick="btn_nine()"      class="square_buttons">9</button></div>
+                    <div class="single"><button type="button" onclick="btn_product()"   class="square_buttons">*</button></div>
+                    <div class="single"><button type="button" onclick="btn_four()"      class="square_buttons">4</button></div>
+                    <div class="single"><button type="button" onclick="btn_five()"      class="square_buttons">5</button></div>
+                    <div class="single"><button type="button" onclick="btn_six()"       class="square_buttons">6</button></div>
+                    <div class="single"><button type="button" onclick="btn_minus()"     class="square_buttons">-</button></div>
+                    <div class="single"><button type="button" onclick="btn_one()"       class="square_buttons">1</button></div>
+                    <div class="single"><button type="button" onclick="btn_two()"       class="square_buttons">2</button></div>
+                    <div class="single"><button type="button" onclick="btn_three()"     class="square_buttons">3</button></div>
+                    <div class="single"><button type="button" onclick="btn_plus()"      class="square_buttons">+</button></div>
+                    <div class="single"><button type="button" onclick="btn_zero()"      class="square_buttons">0</button></div>
+                    <div class="single"><button type="button" onclick="btn_dot()"       class="square_buttons">.</button></div>
+                    <div class="double"><button type="button" onclick="btn_equal()"     class="rectangle_buttons">=</button></div>
                 </div>
             </div>
         </section>
-    
-    
     </body>
-
 </html>
