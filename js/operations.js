@@ -14,7 +14,7 @@ function btn_c()
 
 
 function btn_sqrt(){
-    previous[0].innerHTML=Math.sqrt(parseFloat(previous[0].innerHTML));
+    previous[0].innerHTML=Math.sqrt(parseFloat(previous[0].innerHTML)).toFixed(2);
     resulton=1;
 }
 
@@ -53,25 +53,25 @@ function btn_equal(){
     var newvalue=document.getElementsByClassName("display");
     if (isadd==1)
     {
-        newvalue[0].innerHTML=previousvalue+parseFloat(newvalue[0].innerHTML);
+        newvalue[0].innerHTML=(previousvalue+parseFloat(newvalue[0].innerHTML)).toFixed(2);
     }
     else if(issub==1)
     {   
-        newvalue[0].innerHTML=previousvalue-parseFloat(newvalue[0].innerHTML);
+        newvalue[0].innerHTML=(previousvalue-parseFloat(newvalue[0].innerHTML)).toFixed(2);
     }
     else if(ispro==1)
     {
-        newvalue[0].innerHTML=previousvalue*parseFloat(newvalue[0].innerHTML);
+        newvalue[0].innerHTML=(previousvalue*parseFloat(newvalue[0].innerHTML)).toFixed(2);
         
     }
     else if(isdiv==1)
     {
-        newvalue[0].innerHTML=previousvalue/parseFloat(newvalue[0].innerHTML);
+        newvalue[0].innerHTML=(previousvalue/parseFloat(newvalue[0].innerHTML)).toFixed(2);
     }
 
     else if(ismod==1)
     {
-        newvalue[0].innerHTML=(parseFloat(newvalue[0].innerHTML)/100)*previousvalue;
+        newvalue[0].innerHTML=((parseFloat(newvalue[0].innerHTML)/100)*previousvalue).toFixed(2);
 
     }
     isadd=0;issub=0;ispro=0;isdiv=0;ismod=0;
