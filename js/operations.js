@@ -1,9 +1,11 @@
 var no_of_dots=0;
 var previous=document.getElementsByClassName("display");
+previous[0].innerHTML=parseFloat(previous[0].innerHTML);
 var previousvalue=0;
 var isadd=0,issub=0,ispro=0,isdiv=0,ismod=0;
 var resulton=0;                                   //defining a state wheather the display is displaying answer(1) or user input(0).
 var result=0;
+
 function btn_c()
 {
     var x=previous;
@@ -12,7 +14,7 @@ function btn_c()
 
 
 function btn_sqrt(){
-    previous[0].innerHTML=Math.sqrt(parseFloat(previous[0].innerHTML))
+    previous[0].innerHTML=Math.sqrt(parseFloat(previous[0].innerHTML));
     resulton=1;
 }
 
@@ -23,6 +25,7 @@ function btn_add(){
 }
 
 function btn_sub(){
+    
     previousvalue=parseFloat(previous[0].innerHTML);
     previous[0].innerHTML="";                  //making the display box empty
     issub=1;
@@ -51,29 +54,28 @@ function btn_equal(){
     if (isadd==1)
     {
         newvalue[0].innerHTML=previousvalue+parseFloat(newvalue[0].innerHTML);
-        resulton=1;
     }
     else if(issub==1)
-    {
+    {   
         newvalue[0].innerHTML=previousvalue-parseFloat(newvalue[0].innerHTML);
-        resulton=1;
     }
     else if(ispro==1)
     {
         newvalue[0].innerHTML=previousvalue*parseFloat(newvalue[0].innerHTML);
-        resulton=1;
+        
     }
     else if(isdiv==1)
     {
         newvalue[0].innerHTML=previousvalue/parseFloat(newvalue[0].innerHTML);
-        resulton=1;
     }
 
     else if(ismod==1)
     {
         newvalue[0].innerHTML=(parseFloat(newvalue[0].innerHTML)/100)*previousvalue;
-        resulton=1;
+
     }
+    isadd=0;issub=0;ispro=0;isdiv=0;ismod=0;
+    resulton=1;
 }
     
 
